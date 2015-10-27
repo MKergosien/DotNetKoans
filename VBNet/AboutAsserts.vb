@@ -5,20 +5,20 @@ Public Class AboutAsserts
     'We shall contemplate truth by testing reality, via asserts.
     <Koan(1)> _
     Public Sub AssertTruth()
-        Assert.True(False) 'This should be true
+        Assert.True(True) 'This should be true
     End Sub
 
     'Enlightenment may be more easily achieved with appropriate messages
     <Koan(2)> _
     Public Sub AssertTruthWithMessage()
-        Assert.True(False, "This should be true -- Please fix this")
+        Assert.True(True)
     End Sub
 
     'To understand reality, we must compare our expectations against reality
     <Koan(3)> _
     Public Sub AssertEquality()
         Dim expectedValue = 3
-        Dim actualValue = 1 + 1
+        Dim actualValue = 1 + 2
         Assert.True(expectedValue = actualValue)
     End Sub
 
